@@ -1,0 +1,19 @@
+<body>
+    <div id="formLogin">
+        <form (ngSubmit)="SubmitLogin()">
+            
+            <h3>CONNEXION</h3>
+
+            <label>Usernane: </label>
+            <input id="i1" type="text" [(ngModel)]="modelLogin.username" name="username" ><br><br>
+
+            <label>Password: </label>
+            <input id="i1" type="password" [(ngModel)]="modelLogin.password" name="password" ><br><br>
+
+            <input type="submit"  name="submit" value="Se connecter"> <br><br>
+    
+        </form>
+    </div>
+</body>
+
+

@@ -1,0 +1,38 @@
+<ns-navigation-offre></ns-navigation-offre>
+
+<body>
+    
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <div id="tabListe"> 
+        <table>
+            <tr>
+                <th>COMPTE</th>
+                <th>TYPE</th>
+                <th>MONTANT</th>
+                <th>DATE MOUVEMENT</th>
+                <th>STATUT</th>
+                <th>Valider</th>
+                <th>Rejeter</th>
+            </tr>
+            
+            <tr *ngFor="let m of mouvementsMoney,let i = index" >
+                <td>{{ m.id_compte }}</td>
+                <td>{{ m.type }}</td>
+                <td>{{ m.montant }} Ar</td>
+                <td>{{ m.date_mouvement }}</td>
+                <td>{{ m.status }}</td>
+                <td>
+                    <button id="btn-valider" (click)="validerMouvement(m.id_mouvement,m.id_compte,m.type,m.montant,m.montant,m.date_mouvement,m.status)"> V </button>
+                </td>
+                <td>
+                    <button id="btn-rejeter" (click)="rejeterMouvement(m.id_mouvement,m.id_compte,m.type,m.montant,m.montant,m.date_mouvement,m.status)"> X </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+<br>

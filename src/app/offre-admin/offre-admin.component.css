@@ -1,0 +1,80 @@
+body{
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#intro{
+    display: flex;
+}
+
+.title{
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    align-self: flex-start;
+    margin: 2vw auto 0vw 11vw;
+    color: rgb(65, 63, 61);
+}
+
+#tabListe{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-around;
+}
+
+table{
+    padding: 22px;
+    border-spacing: 0px 22px;
+    box-shadow: 3px 4px 4px 4px rgb(2, 2, 2);
+}
+
+th{
+    width: 12vw;
+    padding-bottom: 15px;
+    border-bottom: whitesmoke 3px solid;
+}
+
+td{
+    width: 12vw;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(58, 55, 55);
+}
+
+td.td-first{
+    border-left: rgb(250, 0, 96) 6px solid;
+}
+
+tr{
+    height: 45px;
+}
+
+#btn-supprimer{
+    background-color: rgb(241, 185, 3);
+    border-radius: 3px;
+    border:none;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+#btn-supprimer:hover{
+    background-color: rgb(230, 150, 2);
+}
+
+#btn-modifier{
+    background-color: rgb(24, 255, 43);
+    border-radius: 3px;
+    border:none;
+    padding: 7px 11px 7px 11px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+#btn-modifier:hover{
+    background-color: rgb(4, 119, 13);
+}

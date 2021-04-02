@@ -1,0 +1,48 @@
+#floatMenu{
+    
+    position: fixed;
+    left: 0px;
+    floaT: left;
+    padding: 10px 10px 10px 0px;
+    font-family: Arial;
+    font-weight: 700;
+    text-align: center;
+}
+
+#fm1{
+    
+    background-color:rgba(255, 196, 0, 0.75);
+    padding: 13px 15px 13px 8px;
+    margin: 5px 0px 10px 0px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+#fm1:hover{
+    
+    cursor: pointer;
+    background-color:rgba(255, 196, 0, 0.88);
+    width: 105%;
+    -webkit-transition: ease-in-out 0.3s;
+    transition: 0.3s;
+    animation: ease-in-out 0.3s;
+}
+    
+
+#fm2{
+    
+    background-color:rgba(255, 196, 0, 0.75);;
+    padding: 13px 15px 13px 8px;
+    margin: 5px 0px 10px 0px;
+    border-top-right-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+#fm2:hover{
+    
+    cursor: pointer;
+    background-color:rgba(255, 196, 0, 0.88);
+    width: 105%;
+    -webkit-transition: ease-in-out 0.3s;
+    transition: 0.3s;
+    animation: ease-in-out 0.3s;
+}

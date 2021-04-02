@@ -1,0 +1,42 @@
+<ns-navigation-offre></ns-navigation-offre>
+
+<body>
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <div id="tabListe"> 
+        <table>
+            <tr>
+                <th>NOM</th>
+                <th>VALIDITE</th>
+                <th>MONTANT</th>
+                <th>VALEUR</th>
+                <th>CODE</th>
+                <th>MODIFIER</th>
+                <th>SUPPRIMER</th>
+            </tr>
+            
+            <tr *ngFor="let offre of listOffres,let i = index" >
+                <td class="td-first">{{ listOffres[i].nom }}</td>
+                <td>{{ listOffres[i].type }}j</td>
+                <td>{{ listOffres[i].montant }}Ar</td>
+                <td>{{ listOffres[i].valeur }}</td>
+                <td>{{ listOffres[i].code }}</td>
+                <td>
+                    <a [routerLink]="['/updateOffre' , listOffres[i].id_offre ]" routerLinkActive="active">
+                        <button id="btn-modifier"> Edit </button>
+                    </a>
+
+                    <router-outlet></router-outlet>
+                </td>
+                <td>
+                    <button id="btn-supprimer" (click)="deleteOffreById(listOffres[i].id_offre)"> Delete </button>
+                </td>
+            </tr>
+            
+        </table>
+    </div>
+</body>
+
+<br>

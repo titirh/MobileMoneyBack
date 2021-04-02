@@ -1,0 +1,51 @@
+<ns-navigation-offre></ns-navigation-offre>
+
+<body>
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <div id="tabListe"> 
+        <table>
+            <tr>
+                <th>NOM</th>
+                <th>VALIDITE</th>
+                <th>MONTANT</th>
+                <th>VALEUR</th>
+                <th>CODE</th>
+            </tr>
+            
+            <tr *ngFor="let offre of modelToUpdate,let i = index" >
+                <td class="td-first">{{ modelToUpdate[i].nom }}</td>
+                <td>{{ modelToUpdate[i].type }}j</td>
+                <td>{{ modelToUpdate[i].montant }}Ar</td>
+                <td>{{ modelToUpdate[i].valeur }}</td>
+                <td>{{ modelToUpdate[i].code }}</td>
+            </tr>
+            
+        </table>
+    </div>
+
+    <div id="formUpdate">
+        <form (ngSubmit)="onSubmitUpdate()">
+
+            <label> Nom de l'offre: </label>
+            <input type="text" [(ngModel)]="modelUpdated.nom" name="nom_offre"> <br><br>
+    
+            <label> Type d'offre: </label>
+            <input type="text" [(ngModel)]="modelUpdated.type" name="type_offre"> <br><br>
+    
+            <label> Prix (en Ariary): </label>
+            <input type="text" [(ngModel)]="modelUpdated.montant" name="montant_offre"> <br><br>
+    
+            <label> Valeur (sec/mo/sms): </label>
+            <input type="text" [(ngModel)]="modelUpdated.valeur" name="valeur_offre"> <br><br>
+            
+            <label> Code: </label>
+            <input type="text" [(ngModel)]="modelUpdated.code" name="code_offre"> <br><br>
+            
+            <input type="submit" name="submit" value="Modifier"> <br><br>
+    
+        </form>
+    </div>
+</body>

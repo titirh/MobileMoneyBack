@@ -1,0 +1,46 @@
+body{
+    color: whitesmoke;
+    font-family: Arial;
+    font-size: 18px;
+}
+
+#intro{
+    display: flex;
+}
+
+.title{
+    font-family: Impact, sans-serif;
+    font-size: 40px;
+    align-self: flex-start;
+    margin: 2vw auto 0vw 11vw;
+    color: rgb(65, 63, 61);
+}
+
+#graph{
+    display: flex;
+    padding-left: 18%;
+    padding-top: 50px;
+
+    width: 70%;
+}
+
+#filtre{
+    text-align: center;
+}
+
+.btn-filtre{
+    order: 1;
+    align-self: center;
+
+    background-color: orange;
+    color: whitesmoke;
+    margin-top: 50px;
+    padding: 5px 5% 5px 5%;
+    height: 35px;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-filtre:hover{
+    background-color: rgb(202, 150, 6);
+}

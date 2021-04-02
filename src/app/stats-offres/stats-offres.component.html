@@ -1,0 +1,15 @@
+<ns-navigation-offre></ns-navigation-offre>
+
+<body>
+    <div id="intro">
+        <a  class="title"> {{ title }} </a>
+    </div>
+
+    <div id="filtre">
+        <a class="btn-filtre" (click)="showChart()"> Clients Favoris </a>
+    </div>
+
+    <div id="graph">
+        <canvas id="canvas">{{ chart }}</canvas>
+    </div>
+</body>

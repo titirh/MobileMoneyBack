@@ -1,0 +1,29 @@
+<ns-navigation-offre></ns-navigation-offre>
+<body>
+    <div id="intro">
+        <a  class="title"> {{title}} </a>
+    </div>
+
+    <div id="formInserer">
+        <form (ngSubmit)="onSubmitAdd()">
+
+            <label> Nom de l'offre: </label>
+            <input type="text" [(ngModel)]="modelAdd.nom" name="nom_offre"> <br><br>
+
+            <label> Duree offre (en Jour): </label>
+            <input type="text" [(ngModel)]="modelAdd.type" name="type_offre"> <br><br>
+
+            <label> Prix (en Ariary): </label>
+            <input type="text" [(ngModel)]="modelAdd.montant" name="montant_offre"> <br><br>
+
+            <label> Valeur (sec/mo/sms): </label>
+            <input type="text" [(ngModel)]="modelAdd.valeur" name="valeur_offre"> <br><br>
+            
+            <label> Code: </label>
+            <input type="text" [(ngModel)]="modelAdd.code" name="code_offre"> <br><br>
+            
+            <input type="submit" name="submit" value="Ajouter"> <br><br>
+
+        </form>
+    </div>
+</body>

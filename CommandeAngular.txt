@@ -1,0 +1,14 @@
+ng g module app-routing
+
+npm install @auth0/angular-jwt --save
+
+
+
+
+//Service Login
+
+login(email:string, password:string) {
+    return this.httpClient.post<{access_token:  string}>('http://www.your-server.com/auth/login', {email, password}).pipe(tap(res => {
+    localStorage.setItem('access_token', res.access_token);
+}))
+}
