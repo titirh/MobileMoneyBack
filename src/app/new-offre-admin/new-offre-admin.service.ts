@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { Offre } from "../classes/offre";
+import { User } from "../classes/User";
 
 @Injectable({
     providedIn: 'root'
@@ -9,7 +10,8 @@ import { Offre } from "../classes/offre";
 
 export class NewOffreAdminService{
    
-    private readonly urlWS = 'http://localhost:8080/WSMobileMoney/webresources';
+    u: User = new User(0,"0","0","0","0");
+    private readonly urlWS = this.u.getUrl(); 
 
     //--------------------------------
 
