@@ -13,7 +13,8 @@ export class LoginService{
 
     private currentUserSubject:BehaviorSubject<User>;
     private currentUser: Observable<User>;
-    private readonly urlWS = 'http://localhost:8080/WSMobileMoney/webresources';
+    u: User = new User(0,"0","0","0","0");
+    private readonly urlWS = this.u.getUrl(); 
     
     public optionRequete = {
         headers: new HttpHeaders({
