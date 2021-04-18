@@ -3,6 +3,7 @@ import { HttpClient,HttpHeaders } from '@angular/common/http';
 import { Observable } from "rxjs";
 import { map } from 'rxjs/operators';
 import { MouvementMoney } from "../classes/MouvementMoney";
+import { User } from "../classes/User";
 
 @Injectable({
     providedIn: 'root'
@@ -10,7 +11,9 @@ import { MouvementMoney } from "../classes/MouvementMoney";
 
 export class TransactionsOffresService{
 
-    private readonly urlWS = 'http://localhost:8080/WSMobileMoney/webresources';
+    
+u: User = new User(0,"0","0","0","0");
+private readonly urlWS = this.u.getUrl();
     
     public optionRequete = {
         headers: new HttpHeaders({
