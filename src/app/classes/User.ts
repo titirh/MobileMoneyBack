@@ -25,4 +25,8 @@ export class User{
         this.numero= numero;
         this.token=token;
     }
+  
+    public getUrl(): string{
+      return "http://localhost:8080/";
+    }
 }
